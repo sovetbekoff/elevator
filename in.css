@@ -1,0 +1,17 @@
+.slider {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  margin: 30px auto;
+}
+.slider-line {
+  height: 250px;
+  width: 1050px;
+}
+
+.elevator {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  position: relative;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Лифт</title>
+    <style>
+      /* Стили для лифта и контейнера */
+      #elevator-container {
+        width: 100px;
+        height: 300px;
+        border: 1px solid black;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #elevator {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: absolute;
+        bottom: 0;
+        transition: bottom 1s ease; /* Плавное движение лифта */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Лифт</h1>
+    <button onclick="moveElevator('up')">Вниз</button>
+    <button onclick="moveElevator('down')">Вверх</button>
+    <br />
+    <label
+      >Выберите этаж: <input type="number" id="floorInput" min="-3" max="2"
+    /></label>
+    <button onclick="moveToFloor()">Переместиться</button>
+
+    <div id="elevator-container">
+      <div id="elevator"></div>
+    </div>
+
+    <script src="in.js"></script>
+  </body>
+</html>
